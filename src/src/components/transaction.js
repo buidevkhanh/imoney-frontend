@@ -75,22 +75,22 @@ export default function Transaction(){
                     setSuccess('Create transaction successful');
                     clearForm();
                 }).catch((error) => {
-                    setError(error.response.data.message);
+                    setError(error?.response?.data?.message || "System error");
                 })
             })
         } else {
             userCreateTransaction({
-                ammout,
-                category,
-                wallet,
+                ammout: ammout.current.value,
+                category: category._id,
+                wallet: wallet._id,
                 note: note.current.value || "",
                 date: date.current.value || new Date(),
                 type
             }).then(() => {
                 setSuccess('Create transaction successful');
                 clearForm();
-            }).catch((error) => {
-                setError(error.response.data.message);
+            }).catch((err) => {
+                setError(err?.response?.data?.message || "System error");
             })
         }
     }
