@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { userGetCategory } from "../api/category";
-import { userCreateTransaction, userStatistic } from "../api/transaction";
+import { userCreateTransaction } from "../api/transaction";
 import { userUpload } from "../api/user";
 import { userGetWallet } from "../api/wallet";
-import Footer from "./footer";
 
 export default function Transaction(){
     const [type, setType] = useState('transfer');
@@ -129,7 +128,7 @@ export default function Transaction(){
             <div className="mt-3 px-4 position-relative bg-secondary" style={{height: '762px', overflowY: 'scroll'}}>
                 <div className="d-flex justify-content-center bg-secondary px-2 my-4">
                     <div className="logo bg-secondary d-flex justify-content-center align-items-center" style={{width: '10%'}}>
-                        <i class="fas fa-coins bg-secondary" style={{fontSize: '25px'}}></i>
+                        <i className="fas fa-coins bg-secondary" style={{fontSize: '25px'}}></i>
                     </div>
                     <div style={{width: '90%'}} className="d-flex justify-content-center align-items-end bg-secondary">
                         <div style={{width: '90%'}}>
@@ -142,7 +141,7 @@ export default function Transaction(){
                 </div>
                 <div className="d-flex justify-content-center bg-secondary px-2 my-4">
                     <div className="logo bg-secondary d-flex justify-content-center align-items-center" style={{width: '10%'}}>
-                        <i class="fas fa-list bg-secondary" style={{fontSize: '25px'}}></i>
+                        <i className="fas fa-list bg-secondary" style={{fontSize: '25px'}}></i>
                     </div>
                     <div style={{width: '90%'}} className="d-flex position-relative justify-content-center align-items-end bg-secondary">
                         <div style={{width: '90%'}}>
@@ -171,7 +170,7 @@ export default function Transaction(){
                             </div> : null }
                         </div>
                         <div className="mx-2 bg-secondary bold text-end" style={{width: '10%'}}>
-                            <i class="fas fa-exchange-alt show-category bg-secondary" onClick={() => setIsCategory(!isCategory)}></i>
+                            <i className="fas fa-exchange-alt show-category bg-secondary" onClick={() => setIsCategory(!isCategory)}></i>
                         </div>
                     </div>
                 </div>
@@ -184,7 +183,7 @@ export default function Transaction(){
                             <input type="text" className="input-style-2 bg-secondary" ref={note} placeholder="Note"></input>
                         </div>
                         <div className="bg-secondary" style={{width: 'calc(100% - 282px)'}}>
-                            <i class="fas fa-sync-alt bg-secondary" style={{marginLeft: '20px'}} onClick={() => note.current.value=null}></i>
+                            <i className="fas fa-sync-alt bg-secondary" style={{marginLeft: '20px'}} onClick={() => note.current.value=null}></i>
                         </div>
                     </div>
                 </div>
@@ -226,13 +225,13 @@ export default function Transaction(){
                             </div> : null }
                         </div>
                         <div className="mx-2 bg-secondary bold text-end" style={{width: '10%'}}>
-                            <i class="fas fa-exchange-alt show-wallet bg-secondary" onClick={() => setIsWallet(!isWallet)}></i>
+                            <i className="fas fa-exchange-alt show-wallet bg-secondary" onClick={() => setIsWallet(!isWallet)}></i>
                         </div>
                     </div>
                 </div>
                 <div className="d-flex justify-content-center bg-secondary px-2 my-4">
                     <div className="logo bg-secondary d-flex justify-content-center align-items-center" style={{width: '10%'}}>
-                        <i class="fas fa-dollar-sign bg-secondary" style={{fontSize: '25px'}}></i>
+                        <i className="fas fa-dollar-sign bg-secondary" style={{fontSize: '25px'}}></i>
                     </div>
                     <div style={{width: '90%'}} className="d-flex justify-content-between bg-secondary align-items-center">
                         <div className={`bg-secondary cursor text-center py-2 ${type === 'transfer' ? "text-main border-main" : null}`} style={{border: '2px solid #363853', width: '49%'}}
@@ -251,7 +250,7 @@ export default function Transaction(){
                         <label htmlFor="upload">
                             {
                                 !preview ?
-                                <i class="fas fa-camera bg-white" style={{color: '#e3e3e3', fontSize: '40px'}}></i>
+                                <i className="fas fa-camera bg-white" style={{color: '#e3e3e3', fontSize: '40px'}}></i>
                                 : 
                                 <div className="position-relative">
                                     <i className="fas fa-times-circle bg-white text-danger position-absolute rounded" onClick={(e) => {e.preventDefault();setPreview(null); setFile(null); document.getElementById("upload").value = null}} style={{right: '-5px', top: '-5px'}}></i>

@@ -37,7 +37,7 @@ export default function Profile() {
                     <div className="upload-avatar position-relative bg-secondary">
                         <img className="bg-secondary" src={`http://localhost:8080/api/v1/albums/${profile?.avatar || 'system-default-avatar.png'}`} alt="user avatar" width="120px" height="120px" style={{borderRadius: '50%'}}/>
                         <label htmlFor="upload" className="m-0 p-0">
-                            <i class="fas fa-camera bg-secondary position-absolute bottom-0 left-50" style={{left: '50%', transform: 'translateX(-50%)', fontSize: '20px', color: "#a3a3a3"}}></i>
+                            <i className="fas fa-camera bg-secondary position-absolute bottom-0 left-50" style={{left: '50%', transform: 'translateX(-50%)', fontSize: '20px', color: "#a3a3a3"}}></i>
                         </label>
                         <input type="file" onChange={() => updateAvatar()} accept={'image/*'} style={{visibility: "hidden"}} id="upload"/>
                     </div>
@@ -51,28 +51,28 @@ export default function Profile() {
                     <i className="fas fa-wallet me-2 bg-secondary" style={{width: '10%'}}></i>
                     <div className="text-secondary bg-secondary" style={{width: '65%'}}>My Wallet</div>
                     <div className="bg-secondary w-25 text-end bg-secondary">
-                        <i class="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
+                        <i className="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
                     </div>
                 </div>
                 <div className="funcs cursor d-flex justify-content-center align-items-center my-3 bg-secondary" style={{fontSize: '18px'}}>
                     <i className="fa fa-wrench me-2 bg-secondary" style={{width: '10%'}}></i>
                     <div className="text-secondary bg-secondary" style={{width: '65%'}}>Tools</div>
                     <div className="bg-secondary w-25 text-end bg-secondary">
-                        <i class="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
+                        <i className="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
                     </div>
                 </div>
                 <div className="funcs cursor d-flex justify-content-center align-items-center my-3 bg-secondary" style={{fontSize: '18px'}}>
                     <i className="fas fa-shield-alt me-2 bg-secondary" style={{width: '10%'}}></i>
                     <div className="text-secondary bg-secondary" style={{width: '65%'}}>Privacy</div>
                     <div className="bg-secondary w-25 text-end bg-secondary">
-                        <i class="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
+                        <i className="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
                     </div>
                 </div>
                 <div className="funcs cursor d-flex justify-content-center align-items-center my-3 bg-secondary" style={{fontSize: '18px'}}>
                     <i className="fa fa-info-circle me-2 bg-secondary" style={{width: '10%'}}></i>
                     <div className="text-secondary bg-secondary" style={{width: '65%'}}>About</div>
                     <div className="bg-secondary w-25 text-end bg-secondary">
-                        <i class="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
+                        <i className="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
                     </div>
                 </div>
                 <div className="funcs cursor d-flex justify-content-center align-items-center my-3 bg-secondary" style={{fontSize: '18px'}}
@@ -80,7 +80,7 @@ export default function Profile() {
                     <i className="fas fa-sign-out-alt me-2 bg-secondary" style={{width: '10%'}}></i>
                     <div className="text-secondary bg-secondary" style={{width: '65%'}}>Logout</div>
                     <div className="bg-secondary w-25 text-end bg-secondary">
-                        <i class="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
+                        <i className="fa fa-angle-right bg-secondary" aria-hidden="true" style={{color: 'inherit'}}></i>
                     </div>
                 </div>
             </div>

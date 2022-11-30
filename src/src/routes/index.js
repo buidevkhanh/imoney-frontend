@@ -6,6 +6,7 @@ import Wallet from "../components/wallet";
 import Category from "../components/category";
 import Transaction from "../components/transaction";
 import Statistic from "../components/statistic";
+import Redirect from "../components/redirect";
 
 export default function BaseRoutes() {
     return(
@@ -18,6 +19,7 @@ export default function BaseRoutes() {
                 <Route exact path="/category" element={<Category/>}></Route>
                 <Route exact path="/transaction" element={<Transaction/>}></Route>
                 <Route exact path="/report" element={<Statistic/>}></Route>
+                <Route path="/*" element={<Redirect/>}></Route>
             </Routes>
         </BrowserRouter>
     )

@@ -42,7 +42,7 @@ export default function Register(){
                     <h4 className="p-0 m-0 bg-secondary">Best way to save Your Money.</h4>
                 </div>
                 
-                <div class="login-form px-4 w-100 bg-secondary">
+                <div className="login-form px-4 w-100 bg-secondary">
                 <h6 className="bg-secondary text-secondary w-100 text-left">Fullname</h6>
                 <input className="input-style-1 w-100 p-2" onFocus={() => {setError(null); setSuccess(null)}} ref={fullname} placeholder="iMoney"></input>
                 <h6 className="bg-secondary text-secondary w-100 text-left mt-4">Email Address</h6>

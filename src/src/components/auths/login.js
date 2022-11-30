@@ -41,7 +41,7 @@ export default function Login(){
                 <div className="my-5">
                     <h4 className="p-0 m-0 bg-secondary">Best way to save Your Money.</h4>
                 </div>
-                <div class="login-form px-4 w-100 bg-secondary">
+                <div className="login-form px-4 w-100 bg-secondary">
                 <h6 className="bg-secondary text-secondary w-100 text-left">Email Address</h6>
                 <input className="input-style-1 w-100 p-2" onFocus={()=>setError(null)} ref={email} placeholder="example@gmail.com"></input>
                 <h6 className="bg-secondary text-secondary w-100 text-left mt-4" placeholder="password">Password</h6>

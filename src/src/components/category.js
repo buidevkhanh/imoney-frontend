@@ -29,7 +29,7 @@ export default function Category(){
                         <h5 className="text-secondary bg-white">{item.name}</h5>
                     </div>
                     <div className="wallet-info px-3 bg-white" style={{width: '5%'}}>
-                        <i class="far fa-trash-alt bg-white text-danger" onClick={() => setConfirm(item._id)} aria-hidden="true" style={{fontSize: '20px'}}></i>
+                        <i className="far fa-trash-alt bg-white text-danger" onClick={() => setConfirm(item._id)} aria-hidden="true" style={{fontSize: '20px'}}></i>
                     </div>
                 </div>
             </>
@@ -104,7 +104,7 @@ export default function Category(){
                                 <label htmlFor="upload" onClick={()=>setError("")}>
                                     {
                                         !preview ?
-                                        <i class="fas fa-camera bg-white" style={{color: '#e3e3e3', fontSize: '40px'}}></i>
+                                        <i className="fas fa-camera bg-white" style={{color: '#e3e3e3', fontSize: '40px'}}></i>
                                         : 
                                         <div className="position-relative">
                                             <i className="fas fa-times-circle bg-white text-danger position-absolute rounded" onClick={(e) => {e.preventDefault();setPreview(null); setFile(null); document.getElementById('upload').value = null}} style={{right: '-5px', top: '-5px'}}></i>

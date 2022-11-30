@@ -57,7 +57,7 @@ export default function Wallet(){
                         <h5 className="text-danger-main bg-white">${item.balance}</h5>}
                     </div>
                     <div className="wallet-info px-3 bg-white" style={{width: '5%'}}>
-                        <i class="far fa-trash-alt bg-white text-danger" onClick={() => setConfirm(item._id)} aria-hidden="true" style={{fontSize: '20px'}}></i>
+                        <i className="far fa-trash-alt bg-white text-danger" onClick={() => setConfirm(item._id)} aria-hidden="true" style={{fontSize: '20px'}}></i>
                     </div>
                 </div>
             </>
