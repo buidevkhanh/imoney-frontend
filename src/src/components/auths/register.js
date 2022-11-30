@@ -22,6 +22,9 @@ export default function Register(){
         }
         userSignUp(email.current.value, password.current.value, fullname.current.value).then(() => {
             setSuccess(`Success: Sign up success, please login`);
+            setTimeout(()=>{
+                window.location.replace("/signin");
+            }, 3000);
         }).catch((error) => {
             setError(error?.response?.data?.message || 'System error');
         })
